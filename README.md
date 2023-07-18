@@ -9,3 +9,4 @@ Table of Contents
 11. Technical Check-In (with Quiz)
 12. Page Links
 13. Partials
+14. Superglobals and Current Page Styling
