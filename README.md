@@ -2,8 +2,6 @@
 
 simple &amp; short php lessons from laracasts
 
-Table of Contents
-
 ## 11. Technical Check-In (with Quiz)
 
 1. Question
