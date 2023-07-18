@@ -8,3 +8,4 @@ Table of Contents
 10. Seperate PHP logic from the template
 11. Technical Check-In (with Quiz)
 12. Page Links
+13. Partials
