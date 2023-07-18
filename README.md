@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## Seperate PHP logic from the template
+## 9. Seperate PHP logic from the template
