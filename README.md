@@ -10,3 +10,4 @@ Table of Contents
 12. Page Links
 13. Partials
 14. Superglobals and Current Page Styling
+15. Make a PHP router
