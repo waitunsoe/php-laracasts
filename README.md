@@ -12,3 +12,4 @@ Table of Contents
 14. Superglobals and Current Page Styling
 15. Make a PHP router
 16. Create a MYSQL Database
+17. PDO first steps
