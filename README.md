@@ -17,3 +17,4 @@ Table of Contents
 19. Environments and Configuration Flexibility
 20. SQL Injection Vulnerabilities Explained
 21. Mini Project: Notes App -> table reletionship introduction
+22. Mini Project: Notes App -> Render the Notes and Note Page
