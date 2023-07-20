@@ -16,3 +16,4 @@ Table of Contents
 18. Extract a PHP Database Class
 19. Environments and Configuration Flexibility
 20. SQL Injection Vulnerabilities Explained
+21. Mini Project: Notes App -> table reletionship introduction
