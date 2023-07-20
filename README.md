@@ -13,3 +13,4 @@ Table of Contents
 15. Make a PHP router
 16. Create a MYSQL Database
 17. PDO first steps
+18. Extract a PHP Database Class
