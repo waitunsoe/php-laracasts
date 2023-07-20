@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 18. Extract a PHP Database Class
+## 19. Environments and Configuration Flexibility
