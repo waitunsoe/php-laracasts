@@ -19,3 +19,4 @@ Table of Contents
 21. Mini Project: Notes App -> table reletionship introduction
 22. Mini Project: Notes App -> Render the Notes and Note Page
 23. Mini Project: Notes App -> Introduction to Authorization
+23. Mini Project: Notes App -> Programming is Rewriting
