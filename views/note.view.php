@@ -9,7 +9,7 @@
         <p class="mb-6">
             <a href="/notes" class="text-blue-500 underline">Go Notes</a>
         </p>
-        <p><?= $note['title'] ?></p>
+        <p><?= htmlspecialchars($note['title']) ?></p>
     </div>
 </main>
 

@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 25. Intro to Forms and Request Methods
+## 26. Always Escape Untrusted Input
