@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 26. Always Escape Untrusted Input
+## 27. Introduction to Form Validation

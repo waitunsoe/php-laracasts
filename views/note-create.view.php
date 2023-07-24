@@ -5,12 +5,14 @@
 
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <h1 class=" text-center text-3xl font-bold">Create New Note</h1>
 
-        <form action="/notes/create" method="post">
-            <label class="block">Enter Note</label>
-            <textarea name="title" class="border border-blue-400 focus:border-blue-500"></textarea>
-            <button class="block">Save Note</button>
+        <form action="/notes/create" method="post" class="bg-white shadow rounded p-10">
+            <label class="block mb-2">Enter Note</label>
+            <textarea name="title" class="w-1/2 ring-1 rounded block border border-blue-500"><?php $_POST["title"] ?? '' ?></textarea>
+            <?php if (isset($errors['title'])) : ?>
+                <small class="text-red-500"><?= $errors['title'] ?></small>
+            <?php endif; ?>
+            <button class="block px-3 py-2 bg-blue-700 text-white rounded hover:bg-blue-500 mt-3">Save Note</button>
         </form>
 
         <p class="mt-6">
