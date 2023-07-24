@@ -1,22 +1,21 @@
 <?php
 
 $config = require('config.php');
+$db = new Database($config['database'], 'username', 'password');
 
 $heading = 'Note';
 $currentUserId = 1;
 
-$db = new Database($config['database'], 'username', 'password');
-
 $sql = 'SELECT * FROM posts WHERE id=:id';
-$note = $db->query($sql, ['id' => $_GET["id"]])->fetch();
+$note = $db->query($sql, ['id' => $_GET["id"]])->findOrFail();
 
-if (!$note) {
-    abort();
-}
+authorize($note['user_id'] === $currentUserId);
+// if (!$note) {
+//     abort();
+// }
 
-
-if ($note['user_id'] !== $currentUserId) {
-    abort(Response::FORBIDDEN);
-}
+// if ($note['user_id'] !== $currentUserId) {
+//     abort(Response::FORBIDDEN);
+// }
 
 require_once 'views/note.view.php';
