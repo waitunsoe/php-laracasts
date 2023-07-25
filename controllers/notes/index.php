@@ -2,7 +2,7 @@
 
 $config = require(base_path('config.php'));
 
-$db = new Database($config['database'], 'admin', 'wtsisadmin');
+$db = new Database($config['database'], 'username', 'password');
 
 $sql = 'SELECT * FROM posts WHERE user_id=1';
 $notes = $db->query($sql)->get();
