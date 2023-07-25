@@ -25,3 +25,4 @@ Table of Contents
 27. Mini Project: Notes App -> Introduction to Form Validation
 28. Mini Project: Notes App -> Extract a Simple Validator Class
 29. Mini Project: Notes App -> Resourceful Naming Conventions
+30. Mini Project: Notes App -> Autoloading and Extraction
