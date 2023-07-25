@@ -3,7 +3,7 @@
 require 'Validator.php';
 
 $config = require('config.php');
-$db = new Database($config['database'], 'admin', 'wtsisadmin');
+$db = new Database($config['database'], 'usename', 'password');
 
 $heading = 'Create New Note';
 
@@ -26,4 +26,4 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     }
 }
 
-require_once './views/note-create.view.php';
+require_once './views/notes/create.view.php';

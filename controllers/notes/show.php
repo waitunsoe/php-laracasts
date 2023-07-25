@@ -1,7 +1,7 @@
 <?php
 
 $config = require('config.php');
-$db = new Database($config['database'], 'admin', 'wtsisadmin');
+$db = new Database($config['database'], 'username', 'password');
 
 $heading = 'Note';
 $currentUserId = 1;
@@ -18,4 +18,4 @@ authorize($note['user_id'] === $currentUserId);
 //     abort(Response::FORBIDDEN);
 // }
 
-require_once 'views/note.view.php';
+require_once 'views/notes/show.view.php';

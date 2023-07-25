@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 28. Extract a Simple Validator Class
+## 29. Resourceful Naming Conventions
