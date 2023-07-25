@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 30. Autoloading and Extraction
+## 31. Namespacing- What, Why, How?

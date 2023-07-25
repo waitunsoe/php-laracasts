@@ -7,12 +7,14 @@ error_reporting(E_ALL);
 
 const BASE_PATH = __DIR__ . '/../';
 
-require_once BASE_PATH . 'functions.php';
+require_once BASE_PATH . 'Core/functions.php';
 
 // require_once base_path('Response.php');
 // require_once base_path('Database.php');
 spl_autoload_register(function ($class) {
-    require base_path('Core/' . $class . '.php');
+    // Core\Database
+    $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+    require base_path($class . '.php');
 });
 
-require_once base_path('router.php');
+require_once base_path('Core/router.php');
