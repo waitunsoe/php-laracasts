@@ -1,16 +1,15 @@
 <?php
 
-require 'Validator.php';
+require base_path('Validator.php');
 
-$config = require('config.php');
-$db = new Database($config['database'], 'usename', 'password');
+$config = require base_path('config.php');
+$db = new Database($config['database'], 'admin', 'wtsisadmin');
 
-$heading = 'Create New Note';
+$errors = [];
 
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
     // $validator = new Validator;
-    $errors = [];
 
     // dd($validator->string($_POST["title"], 1, 10));
 
@@ -26,4 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     }
 }
 
-require_once './views/notes/create.view.php';
+view('notes/create.view.php', [
+    'heading' => 'Create New Note',
+    'errors' => $errors
+]);

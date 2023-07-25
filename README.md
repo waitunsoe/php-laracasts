@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 29. Resourceful Naming Conventions
+## 30. Autoloading and Extraction

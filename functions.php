@@ -18,8 +18,19 @@ function uriIs($value)
 }
 
 function authorize($condition, $status = Response::FORBIDDEN)
-{   
+{
     if (!$condition) {
         abort($status);
     }
+}
+
+function base_path($path)
+{
+    return BASE_PATH . $path;
+}
+
+function view($path, $attributes = [])
+{
+    extract($attributes);
+    require_once base_path('views/' . $path);
 }

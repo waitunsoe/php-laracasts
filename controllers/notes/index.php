@@ -1,12 +1,13 @@
 <?php
 
-$heading = 'My Notes';
+$config = require(base_path('config.php'));
 
-$config = require('config.php');
-
-$db = new Database($config['database'], 'username', 'password');
+$db = new Database($config['database'], 'admin', 'wtsisadmin');
 
 $sql = 'SELECT * FROM posts WHERE user_id=1';
 $notes = $db->query($sql)->get();
 
-require_once 'views/notes/index.view.php';
+view('notes/index.view.php', [
+    'heading' => 'My Notes',
+    'notes' => $notes
+]);

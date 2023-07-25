@@ -1,9 +1,8 @@
 <?php
 
-$config = require('config.php');
-$db = new Database($config['database'], 'username', 'password');
+$config = require base_path('config.php');
+$db = new Database($config['database'], 'admin', 'wtsisadmin');
 
-$heading = 'Note';
 $currentUserId = 1;
 
 $sql = 'SELECT * FROM posts WHERE id=:id';
@@ -18,4 +17,7 @@ authorize($note['user_id'] === $currentUserId);
 //     abort(Response::FORBIDDEN);
 // }
 
-require_once 'views/notes/show.view.php';
+view('notes/show.view.php', [
+    'heading' => 'Note',
+    'note' => $note
+]);

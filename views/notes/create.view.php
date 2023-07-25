@@ -1,6 +1,6 @@
-<?php require_once 'views/partials/head.php' ?>
-<?php require_once 'views/partials/nav.php' ?>
-<?php require_once 'views/partials/banner.php' ?>
+<?php require_once base_path('views/partials/head.php') ?>
+<?php require_once base_path('views/partials/nav.php') ?>
+<?php require_once base_path('views/partials/banner.php') ?>
 
 
 <main>
@@ -21,4 +21,4 @@
     </div>
 </main>
 
-<?php require_once 'views/partials/footer.php'; ?>
+<?php require_once base_path('views/partials/footer.php') ?>
