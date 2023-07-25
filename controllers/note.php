@@ -1,7 +1,7 @@
 <?php
 
 $config = require('config.php');
-$db = new Database($config['database'], 'admin', 'wtsisadmin');
+$db = new Database($config['database'], 'username', 'password');
 
 $heading = 'Note';
 $currentUserId = 1;
