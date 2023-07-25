@@ -26,3 +26,4 @@ Table of Contents
 28. Mini Project: Notes App -> Extract a Simple Validator Class
 29. Mini Project: Notes App -> Resourceful Naming Conventions
 30. Mini Project: Notes App -> Autoloading and Extraction
+31. Mini Project: Notes App -> Namespacing: What, Why, How?
