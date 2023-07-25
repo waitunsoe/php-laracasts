@@ -1,20 +1,21 @@
 <?php
 
+require 'Validator.php';
+
 $config = require('config.php');
-$db = new Database($config['database'], 'username', 'password');
+$db = new Database($config['database'], 'admin', 'wtsisadmin');
 
 $heading = 'Create New Note';
 
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
+    // $validator = new Validator;
     $errors = [];
 
-    if (strlen($_POST["title"]) === 0) {
-        $errors['title'] = 'Title field is required';
-    }
+    // dd($validator->string($_POST["title"], 1, 10));
 
-    if (strlen($_POST["title"]) > 1000) {
-        $errors['title'] = 'Title field must not be greater than 1000';
+    if (!Validator::string($_POST["title"], 1, 1000)) {
+        $errors['title'] = 'Title field is required';
     }
 
     if (empty($errors)) {

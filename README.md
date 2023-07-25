@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 27. Introduction to Form Validation
+## 28. Extract a Simple Validator Class
