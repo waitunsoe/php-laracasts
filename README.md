@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 33. Build a Better PHP Router
+## 34. One Request, One Controller
