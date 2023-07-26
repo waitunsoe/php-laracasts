@@ -28,3 +28,4 @@ Table of Contents
 30. Mini Project: Notes App -> Autoloading and Extraction
 31. Mini Project: Notes App -> Namespacing: What, Why, How?
 32. Mini Project: Notes App -> Handle Multiple Request Methods From a Controller Action
+33. Mini Project: Notes App -> Build a Better Router
