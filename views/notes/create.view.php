@@ -6,7 +6,7 @@
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
 
-        <form action="/notes/create" method="post" class="bg-white shadow rounded p-10">
+        <form action="/notes/create" method="POST" class="bg-white shadow rounded p-10">
             <label class="block mb-2">Enter Note</label>
             <textarea name="title" class="w-1/2 ring-1 rounded block border border-blue-500"><?php $_POST["title"] ?? '' ?></textarea>
             <?php if (isset($errors['title'])) : ?>

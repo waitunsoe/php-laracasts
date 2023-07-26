@@ -3,7 +3,7 @@
 use Core\Database;
 use Core\Validator;
 
-require base_path('Validator.php');
+// require base_path('Validator.php');
 
 $config = require base_path('config.php');
 $db = new Database($config['database'], 'username', 'password');
@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
             'title' => $_POST["title"],
             'user_id' => 1,
         ]);
+        header('location: /notes');
     }
 }
 

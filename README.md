@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 32. Handle Multiple Request Methods From a Controller Action
+## 33. Build a Better PHP Router
