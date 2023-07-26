@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 34. One Request, One Controller
+## 35. Make Your First Service Container
