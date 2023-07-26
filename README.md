@@ -2,4 +2,4 @@
 
 simple &amp; short php lessons from laracasts
 
-## 31. Namespacing- What, Why, How?
+## 32. Handle Multiple Request Methods From a Controller Action
