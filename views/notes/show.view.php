@@ -10,11 +10,15 @@
             <a href="/notes" class="text-blue-500 underline">Go Notes</a>
         </p>
         <p><?= htmlspecialchars($note['title']) ?></p>
-        <form action="" method="POST">
-            <input type="hidden" name="_method" value="DELETE">
-            <input type="hidden" name="id" value="<?= $note['id'] ?>">
-            <button class="text-sm px-3 py-1 text-white rounded bg-red-600 mt-3">Delete</button>
-        </form>
+        <div class="mt-6 flex gap-5">
+            <a href="/note/edit?id=<?= $note['id'] ?>" class="block px-5 py-2 bg-blue-700 text-white rounded hover:bg-blue-500">Edit</a>
+            <form action="/note/delete" method="post">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="hidden" name="id" value="<?= $note['id'] ?>">
+                <button class="block px-3 py-2 border border-red-700 text-red-700 rounded hover:bg-red-700 hover:text-white">Delete</button>
+            </form>
+        </div>
+
     </div>
 </main>
 

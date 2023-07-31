@@ -2,4 +2,9 @@
 
 simple &amp; short php lessons from laracasts
 
-## 35. Make Your First Service Container
+## 36. Updating With PATCH Requests
+
+Thins To Learn
+
+- PATCH Requests
+- Validation Duplication
