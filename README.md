@@ -31,4 +31,5 @@ Table of Contents
 33. Mini Project: Notes App -> Build a Better Router
 34. Mini Project: Notes App -> One Request, One Controller
 35. Mini Project: Notes App -> Make Your First Service Container
-36. Mini Project: Notes App -> Updating a Resource With PATCH Requests
+36. Mini Project: Notes App -> Updating a Resource With PATCH
+37. Mini Project: Notes App -> PHP Sessions 101
