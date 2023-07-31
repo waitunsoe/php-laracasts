@@ -33,3 +33,4 @@ Table of Contents
 35. Mini Project: Notes App -> Make Your First Service Container
 36. Mini Project: Notes App -> Updating a Resource With PATCH
 37. Mini Project: Notes App -> PHP Sessions 101
+38. Mini Project: Notes App -> Register a New User
