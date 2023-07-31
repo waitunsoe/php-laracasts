@@ -2,9 +2,9 @@
 
 simple &amp; short php lessons from laracasts
 
-## 36. Updating With PATCH Requests
+## 38. Register a New User
 
 Thins To Learn
 
-- PATCH Requests
-- Validation Duplication
+- Registration
+- Sessions
