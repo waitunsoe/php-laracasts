@@ -34,3 +34,4 @@ Table of Contents
 36. Mini Project: Notes App -> Updating a Resource With PATCH
 37. Mini Project: Notes App -> PHP Sessions 101
 38. Mini Project: Notes App -> Register a New User
+39. Mini Project: Notes App -> Introduction to Middleware
