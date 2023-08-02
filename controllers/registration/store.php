@@ -39,7 +39,7 @@ if ($user) {
     // if no, save one to the database, and then log the user in, and redirect
     $user = $db->query('INSERT INTO users(email, password) VALUES(:email, :password)', [
         'email' => $email,
-        'password' => $password
+        'password' => password_hash($password, PASSWORD_BCRYPT)
     ]);
 
     // mark that the user has logged in
