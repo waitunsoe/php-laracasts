@@ -1,6 +1,7 @@
 <?php
 
 use Core\App;
+use Core\Authenticator;
 use Core\Database;
 use Core\Validator;
 use Http\Forms\LoginForm;
@@ -26,35 +27,41 @@ $password = $_POST['password'];
 // }
 
 
-$form = new LoginForm();
-
-if (!$form->validate($email, $password)) {
-    return view('sessions/create.view.php', [
-        'heading' => 'Login Here!',
-        'errors' => $form->getErrors()
-    ]);
-}
-
 // login the user if the credentials match
 
-$db = App::resolve(Database::class);
+// $db = App::resolve(Database::class);
 
 // check email
-$user = $db->query('SELECT * FROM users WHERE email = :email', ['email' => $email])->find();
 
-if ($user) {
+// $user = $db->query('SELECT * FROM users WHERE email = :email', ['email' => $email])->find();
 
-    // check password
-    if (password_verify($password, $user['password'])) {
+// if ($user) {
 
-        login($user);
-        header('location: /');
-        exit();
+//     // check password
+//     if (password_verify($password, $user['password'])) {
+
+//         login($user);
+//         header('location: /');
+//         exit();
+//     }
+// }
+
+
+$form = new LoginForm();
+
+if ($form->validate($email, $password)) {
+
+    // $auth = new Authenticator();
+
+    if ((new Authenticator)->attempt($email, $password)) {
+        redirect('/');
     }
+
+    $form->setError('email', 'Email or password wrong!');
 }
 
-$errors['email'] = 'Email or password wrong!';
+
 return view('sessions/create.view.php', [
     'heading' => 'Login Here!',
-    'errors' => $errors
+    'errors' => $form->getErrors()
 ]);
