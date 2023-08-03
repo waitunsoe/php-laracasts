@@ -2,15 +2,15 @@
 
 simple &amp; short php lessons from laracasts
 
-Table of Contents
+## Table of Contents
 
-##### Section-1 | The Fundamentals
+### Section-1 | The Fundamentals
 
 9. Lambda functions
 10. Seperate PHP logic from the template
 11. Technical Check-In (with Quiz)
 
-##### Section-2 | Dynamic Web Applications
+### Section-2 | Dynamic Web Applications
 
 12. Page Links
 13. Partials
@@ -22,7 +22,7 @@ Table of Contents
 19. Environments and Configuration Flexibility
 20. SQL Injection Vulnerabilities Explained
 
-##### Section-3 | Notes Mini-Project
+### Section-3 | Notes Mini-Project
 
 21. Mini Project: Notes App -> table reletionship introduction
 22. Mini Project: Notes App -> Render the Notes and Note Page
@@ -33,7 +33,7 @@ Table of Contents
 27. Mini Project: Notes App -> Introduction to Form Validation
 28. Mini Project: Notes App -> Extract a Simple Validator Class
 
-##### Section-4 | Project Organization
+### Section-4 | Project Organization
 
 29. Mini Project: Notes App -> Resourceful Naming Conventions
 30. Mini Project: Notes App -> Autoloading and Extraction
@@ -44,10 +44,14 @@ Table of Contents
 35. Mini Project: Notes App -> Make Your First Service Container
 36. Mini Project: Notes App -> Updating a Resource With PATCH
 
-##### Section-5 | Sessions and Authentication
+### Section-5 | Sessions and Authentication
 
 37. Mini Project: Notes App -> PHP Sessions 101
 38. Mini Project: Notes App -> Register a New User
 39. Mini Project: Notes App -> Introduction to Middleware
 40. Mini Project: Notes App -> Manage Passwords Like This For The Remainder of Your Career
 41. Mini Project: Notes App -> Log In and Log Out
+
+### Section-6 | Refactoring Techniques
+
+42. Mini Project: Notes App -> Extract a Form Validation Object
