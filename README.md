@@ -2,9 +2,10 @@
 
 simple &amp; short php lessons from laracasts
 
-## 40. Manage Passwords Like This For The Remainder of Your Career
+## 41. Log In and Log Out
 
 Thins To Learn
 
-- php built-in function, password_hash
-- Bcrypt algorithm recommended as a secure password hashing method
+- Authentication
+- Expiring Cookies
+- Destroying a Session

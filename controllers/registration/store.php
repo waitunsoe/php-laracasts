@@ -36,16 +36,27 @@ if ($user) {
         'errors' => $errors
     ]);
 } else {
+    // // if no, save one to the database, and then log the user in, and redirect
+    // $user = $db->query('INSERT INTO users(email, password) VALUES(:email, :password)', [
+    //     'email' => $email,
+    //     'password' => password_hash($password, PASSWORD_BCRYPT)
+    // ]);
+
+    // // mark that the user has logged in
+
+    // // $_SESSION['user'] = [
+    // //     'email' => $email
+    // // ];
+    // login($user);
+
     // if no, save one to the database, and then log the user in, and redirect
     $user = $db->query('INSERT INTO users(email, password) VALUES(:email, :password)', [
         'email' => $email,
         'password' => password_hash($password, PASSWORD_BCRYPT)
     ]);
 
-    // mark that the user has logged in
-    $_SESSION['user'] = [
-        'email' => $email
-    ];
+    login($user);
+
     header('location: /');
     exit();
 }

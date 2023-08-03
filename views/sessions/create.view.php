@@ -4,7 +4,7 @@
 
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <form action="/register" method="POST" class="w-1/2 bg-white shadow rounded p-10">
+        <form action="/login" method="POST" class="w-1/2 bg-white shadow rounded p-10">
             <div class="mb-4">
                 <label class="block mb-2">Enter Email</label>
                 <input type="email" name="email" value="<?php $_POST["email"] ?? '' ?>" class="w-full ring-1 rounded block border border-blue-500">
@@ -19,7 +19,7 @@
                     <small class="text-red-500"><?= $errors['password'] ?></small>
                 <?php endif; ?>
             </div>
-            <button class="mx-auto w-1/2 block px-3 py-2 bg-blue-700 text-white rounded hover:bg-blue-500 mt-3">Register</button>
+            <button class="mx-auto w-1/2 block px-3 py-2 bg-blue-700 text-white rounded hover:bg-blue-500 mt-3">Login</button>
         </form>
     </div>
 </main>
