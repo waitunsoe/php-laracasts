@@ -55,3 +55,4 @@ simple &amp; short php lessons from laracasts
 ### Section-6 | Refactoring Techniques
 
 42. Mini Project: Notes App -> Extract a Form Validation Object
+43. Mini Project: Notes App -> Extract an Authenticator Class
