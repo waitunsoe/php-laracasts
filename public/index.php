@@ -1,25 +1,28 @@
 <?php
 
-use Core\Session;
-use Core\ValidationException;
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-session_start();
+session_start();      
+
+use Core\Session;
+use Core\ValidationException;
 
 const BASE_PATH = __DIR__ . '/../';
 
+require_once BASE_PATH . 'vendor/autoload.php';
 require_once BASE_PATH . 'Core/functions.php';
 
 // require_once base_path('Response.php');
 // require_once base_path('Database.php');
-spl_autoload_register(function ($class) {
-    // Core\Database
-    $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
-    require base_path($class . '.php');
-});
+
+// spl_autoload_register(function ($class) {
+//     // Core\Database
+//     $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+//     require base_path($class . '.php');
+// });
+
 
 require base_path('bootstrap.php');
 // require_once base_path('Core/Router.php');

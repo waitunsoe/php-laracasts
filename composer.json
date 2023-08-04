@@ -1,0 +1,16 @@
+{
+    "name": "waitunsoe/php-lessons",
+    "authors": [
+        {
+            "name": "waitunsoe",
+            "email": "waitunsoe.dev@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}

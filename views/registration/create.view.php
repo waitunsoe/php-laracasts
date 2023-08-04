@@ -7,14 +7,14 @@
         <form action="/register" method="POST" class="w-1/2 bg-white shadow rounded p-10">
             <div class="mb-4">
                 <label class="block mb-2">Enter Email</label>
-                <input type="email" name="email" value="<?php $_POST["email"] ?? '' ?>" class="w-full ring-1 rounded block border border-blue-500">
+                <input type="email" name="email" value="<?php old('email')?>" class="w-full ring-1 rounded block border border-blue-500">
                 <?php if (isset($errors['email'])) : ?>
                     <small class="text-red-500"><?= $errors['email'] ?></small>
                 <?php endif; ?>
             </div>
             <div class="mb-4">
                 <label class="block mb-2">Enter Password</label>
-                <input type="password" name="password" value="<?php $_POST["password"] ?? '' ?>" class="w-full ring-1 rounded block border border-blue-500">
+                <input type="password" name="password" class="w-full ring-1 rounded block border border-blue-500">
                 <?php if (isset($errors['password'])) : ?>
                     <small class="text-red-500"><?= $errors['password'] ?></small>
                 <?php endif; ?>
