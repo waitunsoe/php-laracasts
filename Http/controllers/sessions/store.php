@@ -70,4 +70,6 @@ if ($form->validate($email, $password)) {
 // $_SESSION['errors'] = $form->getErrors();
 // $_SESSION['_flash']['errors'] = $form->getErrors();
 Session::flash('errors', $form->getErrors());
+Session::flash('old', ['email' => $email]);
+
 return redirect('/login');

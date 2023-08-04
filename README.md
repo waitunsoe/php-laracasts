@@ -2,10 +2,9 @@
 
 simple &amp; short php lessons from laracasts
 
-## 44. The PRG Pattern (and Session Flashing)
+## 45. Flash Old Form Data to the Session
 
 Things to learn
 
-- the PRG (Post-Redirect-Get) pattern
-- how it can be used to prevent duplicate form submissions
-- redirect function for handling redirects
+- displaying "old" form data to the user
+- old() function

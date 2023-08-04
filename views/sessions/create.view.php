@@ -8,14 +8,14 @@
             <div class="mb-4">
                 <label class="block mb-2">Enter Email</label>
 
-                <input type="email" name="email" value="<?php $_POST["email"] ?? '' ?>" class="w-full rounded block border <?= isset($errors['email']) ? 'border-red-700 focus:border-red-700 ring-1 ring-red-600 focus:ring-red-700 ring-inset' : 'border-blue-500' ?>">
+                <input type="email" name="email" value="<?= old('email') ?>" class="w-full rounded block border <?= isset($errors['email']) ? 'border-red-700 focus:border-red-700 ring-1 ring-red-600 focus:ring-red-700 ring-inset' : 'border-blue-500' ?>">
                 <?php if (isset($errors['email'])) : ?>
                     <small class="text-red-500"><?= $errors['email'] ?></small>
                 <?php endif; ?>
             </div>
             <div class="mb-4">
                 <label class="block mb-2">Enter Password</label>
-                <input type="password" name="password" value="<?php $_POST["password"] ?? '' ?>" class="w-full rounded block border <?= isset($errors['password']) ? 'border-red-700 focus:border-red-700 ring-1 ring-red-600 focus:ring-red-700 ring-inset' : 'border-blue-500' ?>">
+                <input type="password" name="password" class="w-full rounded block border <?= isset($errors['password']) ? 'border-red-700 focus:border-red-700 ring-1 ring-red-600 focus:ring-red-700 ring-inset' : 'border-blue-500' ?>">
                 <?php if (isset($errors['password'])) : ?>
                     <small class="text-red-500"><?= $errors['password'] ?></small>
                 <?php endif; ?>
