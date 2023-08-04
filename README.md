@@ -59,3 +59,7 @@ simple &amp; short php lessons from laracasts
 44. Mini Project: Notes App -> The PRG Pattern (and Session Flashing)
 45. Mini Project: Notes App -> Flash Old Form Data to the Session
 46. Mini Project: Notes App -> Automatically Redirect Back Upon Failed Validation
+
+### Section-7 | Meet Composer
+
+47. Mini Project: Notes App -> Composer and Free Autoloading
