@@ -57,3 +57,4 @@ simple &amp; short php lessons from laracasts
 42. Mini Project: Notes App -> Extract a Form Validation Object
 43. Mini Project: Notes App -> Extract an Authenticator Class
 44. Mini Project: Notes App -> The PRG Pattern (and Session Flashing)
+45. Mini Project: Notes App -> Flash Old Form Data to the Session
