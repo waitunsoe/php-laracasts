@@ -1,5 +1,7 @@
 <?php
 
+use Core\Session;
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -29,3 +31,6 @@ $uri = parse_url($_SERVER["REQUEST_URI"])['path'];
 $method = $_POST['_method'] ?? $_SERVER["REQUEST_METHOD"];
 // routeToController($uri, $routes);
 $router->route($uri, $method);
+
+// unset($_SESSION['_flash']);
+Session::unflash();

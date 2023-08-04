@@ -3,6 +3,7 @@
 use Core\App;
 use Core\Authenticator;
 use Core\Database;
+use Core\Session;
 use Core\Validator;
 use Http\Forms\LoginForm;
 
@@ -61,7 +62,12 @@ if ($form->validate($email, $password)) {
 }
 
 
-return view('sessions/create.view.php', [
-    'heading' => 'Login Here!',
-    'errors' => $form->getErrors()
-]);
+// return view('sessions/create.view.php', [
+//     'heading' => 'Login Here!',
+//     'errors' => $form->getErrors()
+// ]);
+
+// $_SESSION['errors'] = $form->getErrors();
+// $_SESSION['_flash']['errors'] = $form->getErrors();
+Session::flash('errors', $form->getErrors());
+return redirect('/login');

@@ -2,10 +2,10 @@
 
 simple &amp; short php lessons from laracasts
 
-## 43. Extract an Authenticator Class
+## 44. The PRG Pattern (and Session Flashing)
 
 Things to learn
 
-- creating an Authenticator class
-- attempt method
+- the PRG (Post-Redirect-Get) pattern
+- how it can be used to prevent duplicate form submissions
 - redirect function for handling redirects
