@@ -4,6 +4,7 @@ use Core\App;
 use Core\Authenticator;
 use Core\Database;
 use Core\Session;
+use Core\ValidationException;
 use Core\Validator;
 use Http\Forms\LoginForm;
 
@@ -48,19 +49,47 @@ $password = $_POST['password'];
 // }
 
 
-$form = new LoginForm();
+// $form = new LoginForm();
 
-if ($form->validate($email, $password)) {
+// if ($form->validate($email, $password)) {
 
-    // $auth = new Authenticator();
+//     // $auth = new Authenticator();
 
-    if ((new Authenticator)->attempt($email, $password)) {
-        redirect('/');
-    }
+//     if ((new Authenticator)->attempt($email, $password)) {
+//         redirect('/');
+//     }
 
-    $form->setError('email', 'Email or password wrong!');
+//     $form->setError('email', 'Email or password wrong!');
+// }
+
+// try {
+//     LoginForm::validate([
+//         'email' => $email,
+//         'password' => $password
+//     ]);
+// } catch (ValidationException $exception) {
+//     Session::flash('errors', $exception->errors);
+//     Session::flash('old', $exception->old);
+//     return redirect('/login');
+// }
+
+$form = LoginForm::validate([
+    'email' => $email,
+    'password' => $password
+]);
+
+// if ((new Authenticator)->attempt($email, $password)) {
+//     redirect('/');
+// }
+
+// $form->setError('email', 'Email or password wrong!')->throw();
+
+$signedIn = (new Authenticator)->attempt($email, $password);
+
+if (! $signedIn) {
+    $form->setError('email', 'Email or password wrong!')->throw();
 }
-
+redirect('/');
 
 // return view('sessions/create.view.php', [
 //     'heading' => 'Login Here!',
@@ -69,7 +98,7 @@ if ($form->validate($email, $password)) {
 
 // $_SESSION['errors'] = $form->getErrors();
 // $_SESSION['_flash']['errors'] = $form->getErrors();
-Session::flash('errors', $form->getErrors());
-Session::flash('old', ['email' => $email]);
+// Session::flash('errors', $form->getErrors());
+// Session::flash('old', ['email' => $email]);
 
-return redirect('/login');
+// return redirect('/login');

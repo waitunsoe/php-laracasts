@@ -10,7 +10,7 @@ class Database
     public $connection;
     public $statement;
 
-    public function __construct($config, $username = 'root', $password = '')
+    public function __construct($config, $username = 'root', $password = 'password')
     {
         // http_build_query($config); // host=localhost&port=3306&dbname=test
         // http_build_query($config, '', ';'); // host=localhost;port=3306;dbname=test
