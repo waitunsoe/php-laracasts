@@ -2,7 +2,7 @@
 
 simple &amp; short php lessons from laracasts
 
-## 47. Install Two Composer Packages: Collections and PestPHP
+## 48. Install Two Composer Packages: Collections and PestPHP
 
 ### Things to Learn
 
