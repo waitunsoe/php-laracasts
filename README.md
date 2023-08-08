@@ -63,3 +63,4 @@ simple &amp; short php lessons from laracasts
 ### Section-7 | Meet Composer
 
 47. Mini Project: Notes App -> Composer and Free Autoloading
+48. Install Two Composer Packages: Collections and PestPHP
